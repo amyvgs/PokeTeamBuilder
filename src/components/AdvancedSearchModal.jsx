@@ -121,8 +121,6 @@ export default function AdvancedSearchModal(props) {
             const res = await axios.get(pokemonUrl);
             const resRef = res.data;
 
-            console.log(resRef.types)
-
             const typeNames = resRef.types.map((type) => {
                 return type.type.name;
             })

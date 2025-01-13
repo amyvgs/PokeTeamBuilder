@@ -9,10 +9,6 @@ export default function TeamSelectModal(props) {
     // facilitate user navigation if there is not a number of sucfficient teams stored
     const nav = useNavigate();
 
-    useEffect(() => {
-        console.log(userTeams);
-    }, [])
-
     return (
         <div onClick={() => props.setShowSelectModal(false)} className="fixed flex items-center justify-center inset-0 bg-black/60 z-50">
             <div onClick={(e) => e.stopPropagation()} className="flex flex-col justify-center items-center bg-slate-700 h-1/2 w-1/2 opacity-100 p-10 overflow-y-scroll rounded-lg shadow-lg shadow-black text-white">

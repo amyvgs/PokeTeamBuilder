@@ -102,7 +102,6 @@ export default function Table(props) {
                 :
                 <div className="flex flex-row items-center justify-center w-full gap-10 mb-5">
                     <input className="w-full text-white bg-transparent border-b focus:outline-none focus:ring-offset-0 focus:ring-0 focus:border-purple-400 focus:border-b-4 mb-5" type='text' placeholder='Team Name' onChange={(e) => setTeamName(e.target.value)} value={teamName} />
-                    <button className="bg-purple-500 text-white p-2 rounded-lg font-PixelSans hover:bg-purple-400">Randomize</button>
                 </div>
             }
 

@@ -30,7 +30,6 @@ export default function TableSection(props) {
     // behavior for clearing a chosen pokemon
     const clearChosenPokemon = () => {
         let pokeId = chosenPokemon.id
-        console.log(`Removed Pokemon: ${chosenPokemon.name}\nPokemon ID: ${chosenPokemon.id}`)
 
         props.removePokemon(pokeId);
         setDisplayInput(true);

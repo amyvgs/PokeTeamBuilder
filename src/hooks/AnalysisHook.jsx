@@ -43,8 +43,6 @@ export default function useCreateAnalysis(team){
                 types.push(...(element.types))
             });
 
-            console.log(`Current Type List: ${types}`);
-
             // using a series of forEach methods, being dealing with these values accordingly
             types.forEach(element => {
                 let currType = typeRelations[element]

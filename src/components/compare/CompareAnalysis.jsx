@@ -29,11 +29,6 @@ export default function CompareAnalysis(props) {
     const team1Analysis = useCreateAnalysis(props.team1);
     const team2Analysis = useCreateAnalysis(props.team2);
 
-    useEffect(() => {
-        console.log(team1Analysis);
-        console.log(team2Analysis);
-    }, [team1Analysis, team2Analysis])
-
 
     return (
         <div ref={containerRef} style={{ boxShadow: showBottomShadow ? 'inset 0 -20px 15px rgba(0, 0, 0, 0.9)' : 'none' }} className={`relative w-1/3 h-5/6 bg-gray-800 mb-20 overflow-y-auto p-5 rounded-lg`}>

@@ -9,7 +9,6 @@ export default function Home() {
     // function to add to team list
     const addPokemon = (pokemon) => {
         updateTeamList([...teamList, pokemon]);
-        console.log(teamList);
     }
 
     // function to remove to team list
