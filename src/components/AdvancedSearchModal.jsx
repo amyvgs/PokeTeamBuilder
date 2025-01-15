@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Accordion from "./Accordion";
 import axios from "axios";
 import pokeList from "../static/PokeList";

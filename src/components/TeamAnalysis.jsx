@@ -13,8 +13,8 @@ export default function TeamAnalysis(props) {
                     <h1 className="font-PixelSans text-2xl text-white">Team Analysis</h1>
                 </div>
                 <div className="grid grid-cols-3 gap-2">
-                    {Object.keys(analysis).map((type) => {
-                        return <TypeTableDisplay type={type} value={analysis[type]} />
+                    {Object.keys(analysis).map((type, index) => {
+                        return <TypeTableDisplay key={index} type={type} value={analysis[type]} />
                     })}
 
                 </div>
