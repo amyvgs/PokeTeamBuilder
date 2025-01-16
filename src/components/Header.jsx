@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
-import drawer from "../assets/drawer.png";
 import Drawer from "./Drawer";
 import InfoButton from "./Info";
 import { Info } from "@mui/icons-material";
 import { useState } from "react";
-import { createPortal } from 'react-dom';
 
 export default function Header() {
     const [isToggled, setIsToggled] = useState(false);
@@ -16,7 +14,7 @@ export default function Header() {
             <Drawer/>
 
             <div>
-                <span className="text-5xl font-PixelSans text-white"><Link to="/">PokeTeamBuilder</Link></span>
+                <span className="text-5xl max-sm:text-base font-PixelSans text-white"><Link to="/">PokeTeamBuilder</Link></span>
             </div>
 
             <Info onClick={() => setIsToggled(true)} className="hover:cursor-pointer"/>

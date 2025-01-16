@@ -6,7 +6,7 @@ export default function InfoButton(props) {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="flex flex-col text-white justify-start items-center w-1/2 h-3/4 overflow-y-auto bg-gray-700 p-7"
+        className="flex flex-col text-white justify-start items-center max-sm:w-4/5 w-1/2 h-3/4 overflow-y-auto bg-gray-700 p-7"
       >
         <h1 className="text-4xl font-PixelSans mb-5 font-bold">How To Use</h1>
         <p className="mb-8">
@@ -129,13 +129,15 @@ export default function InfoButton(props) {
           <h1 className="text-3xl font-PixelSans text-purple-500 underline">
             View/Edit Stored Teams
           </h1>
-          <p>
-            All stored teams can be viewed within the "My Teams section". All
-            youre teams will be displayed here, you may delete, view, or edit
-            your stored teams. You may remove and add new pokemon and/or change
-            a team name. When you're satisfied with your changes, just click the
-            "update team" button below.
-          </p>
+          <div className="w-full text-center">
+            <p>
+              All stored teams can be viewed within the "My Teams section", you
+              may delete, view, or edit your stored teams. When you are finished
+              editing your current team, click the "Update Team" button and a
+              success message should appear to indicate that values were
+              successfully updated.
+            </p>
+          </div>
         </div>
 
         <div className="flex flex-col mb-8">
@@ -143,20 +145,43 @@ export default function InfoButton(props) {
             Team Comparison
           </h1>
 
-          <p>
-            In this section, you may compare your stored teams to have a better
-            understanding of their strengths and weaknesses comparatively. The
-            left side of the black bar is for the leftmost team and the
-            rightside is for the rightmost team. The longer the bar indicates
-            that a particular type has a stronger impact on a team. A red bar
-            indicates a negative relationship, meaning a team has a weakness to
-            that particular type. A green bar indicates that a team is overall
-            strong against a particular type.
-          </p>
-          <p>
-            You may also hover over the bars on either side to see a numerical
-            representation.
-          </p>
+          <div className="text-center">
+            <p>
+              In this section, you may compare your stored teams to have a
+              better understanding of their strengths and weaknesses. The bars
+              in the chart provide a visual representation:
+              <ul>
+                <li>
+                  Left Side of the Black Bar: represents the leftmost team
+                </li>
+                <li>
+                  Right Side of the Black Bar: represents the rightmost team
+                </li>
+              </ul>
+            </p>
+          </div>
+
+          <div className="text-center">
+            <h1 className="font-PixelSans text-2xl text-purple-300 mt-5">
+              Bar Details
+            </h1>
+            <p>
+              The length of the bar indicates the impact of a type on the team
+              (longer = higher impact).
+            </p>
+            <p>
+              <span className="text-green-500 font-bold">Green Bars</span> mean
+              the team is well-suited against this type
+            </p>
+            <p>
+              <span className="text-red-500 font-bold">Red Bars</span> mean the
+              team has a weakness to this type
+            </p>
+            <p>
+              You may also hover over the bars on either side to see a numerical
+              representation.
+            </p>
+          </div>
         </div>
       </div>
     </div>

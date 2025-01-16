@@ -36,8 +36,8 @@ export default function CompareTeamSlot(props) {
   // handle removal of team to compare
   const handleRemove = () => {
     setIsTeamChosen(false);
-    setChosenTeam(null);
-    setChosenTeamName(null);
+    setChosenTeam([]);
+    setChosenTeamName("");
 
     props.setTeam([]);
   };

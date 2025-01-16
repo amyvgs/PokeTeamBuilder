@@ -33,7 +33,6 @@ export default function TableSection(props) {
 
         props.removePokemon(pokeId);
         setDisplayInput(true);
-        setShowBack(false);
         setChosenPokemon(null);
     }
 

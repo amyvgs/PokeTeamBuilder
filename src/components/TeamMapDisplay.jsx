@@ -56,9 +56,9 @@ export default function TeamMapDisplay(props) {
   return (
     <div className="flex flex-row justify-center items-center w-full gap-5">
       <div
-        className={`flex flex-row justify-between items-center rounded-3xl bg-slate-700 text-white h-20 ${
+        className={`flex flex-row justify-between items-center rounded-3xl bg-slate-700 text-white h-20 border-2 border-slate-900 ${
           props.modal ? "w-full" : "w-4/5"
-        } p-5 hover:cursor-pointer hover:shadow-xl hover:shadow-purple-700`}
+        } p-5 hover:cursor-pointer shadow-xl hover:shadow-purple-700`}
         onClick={clickBehavior}
       >
         <p className="text-purple-600 font-PixelSans text-3xl col-span-2">
