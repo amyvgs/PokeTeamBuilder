@@ -1,7 +1,7 @@
 # PokeTeamBuilder
 A web application that allows users to build, analyze, store, and compare their pokemon teams, designed to help players better understand their team's strengths and weaknesses.
 
-**Live Demo**: <poke-team-builder-omega.vercel.app>
+**Live Demo**: https://poke-team-builder-omega.vercel.app/
 
 ### Key Features
 ---
