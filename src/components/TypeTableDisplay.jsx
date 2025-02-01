@@ -28,7 +28,7 @@ export default function TypeTableDisplay(props){
                 <p>{props.type.charAt(0).toUpperCase() + props.type.slice(1)}</p>
             </div>
 
-            <p className={`${props.value === 0 ? "text-white" : (props.value > 0 ? "text-green-500" : "text-red-500")}`}>{props.value}x</p>
+            <p className={`${props.value === 0 ? "text-white" : (props.value > 0 ? "text-green-500" : "text-red-500")}`}>{props.value}</p>
         </div>
     );
 

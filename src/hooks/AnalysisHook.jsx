@@ -33,32 +33,31 @@ export default function useCreateAnalysis(team){
         const updateAnalysis = () => {
             // reinitialize state object to re-evaluate team upon change, wont cause rerender
             updateTypingObject(typings)
-            let types = [];
+            const types = [];
 
             // for each pokemon in team list obtain their types and put within a list
             team.forEach(element => {
                 if (element === null) {
                     return;
                 }
-                types.push(...(element.types))
+                types.push(...element.types)
             });
 
             // using a series of forEach methods, being dealing with these values accordingly
             types.forEach(element => {
                 let currType = typeRelations[element]
 
-
                 currType["double_damage_from"].forEach(element => {
-                    updateTypingObject(prev => ({ ...prev, [element]: (prev[element]) - 1.5 }));
+                    updateTypingObject(prev => ({ ...prev, [element]: (prev[element]) - 1 }));
                 });
 
                 currType["half_damage_from"].forEach(element => {
-                    updateTypingObject(prev => ({ ...prev, [element]: (prev[element]) + 2 }));
+                    updateTypingObject(prev => ({ ...prev, [element]: (prev[element]) + 1 }));
                 });
 
                 if ("no_damage_from" in currType) {
                     currType["no_damage_from"].forEach(element => {
-                        updateTypingObject(prev => ({ ...prev, [element]: (prev[element]) + 3 }));
+                        updateTypingObject(prev => ({ ...prev, [element]: (prev[element]) + 1.5 }));
                     });
                 }
             });

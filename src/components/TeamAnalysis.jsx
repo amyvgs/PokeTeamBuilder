@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import TypeTableDisplay from "./TypeTableDisplay";
 import useCreateAnalysis from "../hooks/AnalysisHook";
 

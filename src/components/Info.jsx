@@ -39,11 +39,7 @@ export default function InfoButton(props) {
             </h1>
             <p className="mb-5">
               The Pokemon Team Builder offers a different perspective on type
-              advantages and disadvantages. Instead of using type multipliers,
-              this system uses fixed values to provide a more intuitive and
-              balanced evaluation. Multipliers can feel a bit misleading when
-              analyzing an entire team whereas fixed values offer a clear view
-              of overall strengths and weaknesses.
+              advantages and disadvantages. 
             </p>
             <div className="grid grid-cols-3 gap-5 mb-5">
               <div className="flex flex-col item-center justify-center col-span-1 rounded-lg border border-purple-600">
@@ -51,10 +47,9 @@ export default function InfoButton(props) {
               </div>
 
               <div className="flex flex-col justify-center items-center col-span-2 rounded-lg border border-purple-600 p-2">
-                <p>-2x</p>
+                <p>-1</p>
                 <p>
-                  Indicates a large defensive weakness. Deducts 2 from the
-                  corresponding type score to emphaisize its impact
+                  Indicates a large defensive weakness.
                 </p>
               </div>
 
@@ -63,9 +58,9 @@ export default function InfoButton(props) {
               </div>
 
               <div className="flex flex-col justify-center items-center col-span-2 rounded-lg border border-purple-600 p-2">
-                <p>+1.5x</p>
+                <p>+1</p>
                 <p>
-                  Half damage from a type increases the score by +1.5,
+                  Half damage from a type increases the score by +1,
                   reflecting its importance in balancing weaknesses. This value
                   gives resistance more weight to create a clearer picture of
                   your team's overall weakness.
@@ -77,7 +72,7 @@ export default function InfoButton(props) {
               </div>
 
               <div className="flex flex-col justify-center items-center col-span-2 rounded-lg border border-purple-600 p-2">
-                <p>+3x</p>
+                <p>+1.5</p>
                 <p>
                   Pokemon that are immune to a certain type cannot be damaged by
                   any moves of that type.

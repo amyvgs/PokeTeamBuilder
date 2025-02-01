@@ -62,7 +62,6 @@ export default function AdvancedSearchModal(props) {
 
   useEffect(() => {
     const updateResults = async () => {
-      console.log("updating results...");
       // all pokemon to filter
       let allPokemon = pokeList;
 
@@ -109,7 +108,6 @@ export default function AdvancedSearchModal(props) {
       }
 
       if (genResults.length > 0) {
-        console.log(`${genResults}`);
         allPokemon = allPokemon.filter((element) => {
           return genResults.includes(element.name);
         });
